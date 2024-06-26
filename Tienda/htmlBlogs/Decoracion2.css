@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cantora+One&family=Combo&family=Francois+One&family=Fredoka:wght@300&family=Oswald:wght@300&family=Questrial&family=Roboto+Slab:wght@600&family=Signika+Negative:wght@300&family=Titan+One&display=swap');
+
+body {
+    background-color: #D7EAEA;
+}
+
+.Table1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: 'Combo', system-ui;
+    color: #B31312;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Combo', system-ui;
+    color: #B31312;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Texto {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Contenedor-Blogs {
+    max-width: 900px; /* Ajusta esto a lo que quieras */
+    min-width: 350px; /* Ajusta esto a lo que quieras */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn.btn-primary {
+    color: black; /* Cambia #yourTextColor al color que quieras para el texto */
+}

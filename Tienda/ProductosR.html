@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Peluditos</title>
+    <link rel="stylesheet" href="Decoracion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="Body-Form">
+    <a href="../Tienda/Formularios.html" class="btn btn-primary">
+        <i class="fas fa-arrow-left fa-3x"></i>
+    </a>
+    <header>
+        <h1 class="TitFormPel">Ingresa al peludito</h1>
+    </header>
+
+    <div class="Formulario-Peluditos">
+    <form action="gestion_productos.php" method="post" enctype="multipart/form-data" class="Form1">
+        <label for="Nom_Peludito" class="Pregunta">Nombre del Peludito:</label><br>
+        <input type="text" id="Nom_Peludito" name="Nom_Peludito" class="Respuesta"><br><br>
+
+        <label for="Hist_Peludito" class="Pregunta">Historia del Peludito:</label><br>
+        <input type="text" id="Hist_Peludito" name="Hist_Peludito" class="Respuesta"><br><br>
+
+        <label for="Edad_Peludito" class="Pregunta">Edad:</label><br>
+        <input type="number" id="Edad_Peludito" name="Edad_Peludito" class="Respuesta"><br><br>
+
+        <label for="UM_Peludito" class="Pregunta">Unidad de medida edad:</label><br>
+        <Select id="UM_Peludito" name="UM_Peludito" class="textoCuadro">
+            <option class="Respuesta-Mult">Días</option>
+            <option class="Respuesta-Mult">Meses</option>
+            <option class="Respuesta-Mult">Años</option>
+        </select><br><br>
+
+        <label for="Id_Categoria" class="Pregunta">Categoría:</label><br>
+            <select id="Id_Categoria" name="Id_Categoria">
+                <option value="1" class="Respuesta-Mult">Cachorro</option>
+                <option value="2" class="Respuesta-Mult">Adultos</option>
+                <option value="3" class="Respuesta-Mult">Sabios</option>
+            </select><br><br>
+
+        <label for="Img_Peludito" class="Pregunta">Imagen:</label><br>
+        <input type="file" id="Img_Peludito" name="Img_Peludito"><br><br><br>
+
+        <input type="submit" value="Submit" class="boton-descarga">
+    </form>
+    </div>
+</body>
+</html>

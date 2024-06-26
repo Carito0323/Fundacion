@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Peluditos</title>
+    <link rel="stylesheet" href="Decoracion.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        #mapid { height: 180px; }
+    </style>
+</head>
+<body class="Body-Form">
+    <a href="../Tienda/Formularios.html" class="btn btn-primary">
+        <i class="fas fa-arrow-left fa-3x"></i>
+    </a>
+    <header>
+        <h1 class="TitFormPel">Ingresa la jornada</h1>
+    </header>
+    <div class="Formulario-Peluditos">
+    <form action="Gestion_Jornadas.php" method="post" enctype="multipart/form-data" class="Form1">
+        <label for="Dia_Jornada" class="Pregunta">Dia de la jornada:</label><br>
+        <input type="date" id="Dia_Jornada" name="Dia_Jornada" class="Respuesta"><br><br>
+
+        <label for="Horario_Jornada" class="Pregunta">Hora de inicio de la jornada:</label><br>
+        <input type="time" id="Horario_Jornada" name="Horario_Jornada" class="Respuesta"><br><br>
+
+        <label for="Lugar_Jornada" class="Pregunta">Lugar de la jornada:</label><br>
+        <input type="text" id="Direccion" placeholder="Escribe una dirección">
+        <button type="button" id="Buscar">Buscar</button><br>
+        <div id="mapid"></div>
+        <input type="hidden" id="Lugar_Jornada" name="Lugar_Jornada" class="Respuesta"><br><br>
+
+        <label for="Img_Jornada" class="Pregunta">Imagen de la jornada:</label><br>
+        <input type="file" id="Img_Jornada" name="Img_Jornada"><br><br><br>
+
+        <input type="submit" value="Submit" class="boton-descarga">
+    </form>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('mapid').setView([4.6097, -74.0817], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        var marker;
+
+        map.on('click', function(e) {
+            if (marker) {
+                map.removeLayer(marker);
+            }
+            marker = L.marker(e.latlng).addTo(map);
+            document.getElementById('Lugar_Jornada').value = e.latlng.lat + ',' + e.latlng.lng;
+        });
+
+        document.getElementById('Buscar').addEventListener('click', function() {
+            var direccion = document.getElementById('Direccion').value;
+            fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(direccion))
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length > 0) {
+                        var lat = parseFloat(data[0].lat);
+                        var lng = parseFloat(data[0].lon);
+                        map.setView([lat, lng], 13);
+                        if (marker) {
+                            map.removeLayer(marker);
+                        }
+                        marker = L.marker([lat, lng]).addTo(map);
+                        document.getElementById('Lugar_Jornada').value = lat + ',' + lng;
+                    }
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cantora+One&family=Combo&family=Francois+One&family=Fredoka:wght@500&family=Oswald:wght@300&family=Questrial&family=Roboto+Slab:wght@600&family=Signika+Negative:wght@300&family=Titan+One&display=swap');
+
+/* Barra de navegación */
+
+.FondoNavBar {
+    background-color: #2A629A;
+    width: 100%;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ItemNavBar {
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.ItemNavBar:hover {
+    color: #41B06E;
+}
+
+.myButton {
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #AED2FF;
+    font-family: 'Francois One', sans-serif;
+    color: #000000;
+    font-size: 18px;
+}
+
+.myButton:hover {
+    color: #B80000;
+}
+
+.titulo-usuario {
+    font-family: 'Francois One', sans-serif;
+    font-size: 25px;
+    color: #ECF4D6;
+    text-align: center;
+}
+
+#Busqueda {
+    margin-left: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #DDE6ED;
+    font-size: 16px; 
+}
+
+.BotBus {
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #7FC7D9;
+    font-family: 'Francois One', sans-serif;
+    color: #000000;
+    font-size: 18px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.bag-icon {
+    color: black;
+}
+
+.bag-icon:hover {
+    color: #B31312;
+}
+
+/* Principal */
+
+.Table1, .tr1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.TituloPrinc {
+    font-family: 'Roboto Slab', serif;
+    color: #121481;
+    font-size: 80px;
+    text-align: center;
+}
+
+.Texto1 {
+    font-family: 'Combo', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.TitCat {
+    font-family: 'Francois One', sans-serif;
+    color: #1D24CA;
+    font-size: 45px;
+    text-align: center;
+}
+
+.TitAni {
+    font-family: 'Francois One', sans-serif;
+    color: #213555;
+    font-size: 35px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.TextCat {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.TableDisp {
+    display: flex;
+    justify-content: center;
+}
+
+.DispFlex {
+    width: 170px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Titlecarrusel {
+    font-family: 'Francois One', sans-serif;
+    color: #213555;
+    text-align: center;
+    font-size: 45px;
+}
+
+.TableDisp1 {
+    display: flex;
+    justify-content: center;
+}
+
+.DispFlex1 {
+    text-align: center;
+}
+
+
+/* Separador final */
+
+.Separa {
+    background-color: #EEF5FF;
+}
+
+.TableDisp1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.DispFlex1 {
+    width: 400px;
+    margin: 20px;
+} 
+
+.TitTab {
+    color: #280274;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TextTab {
+    font-family: 'Signika Negative', sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.NoLink {
+    text-decoration: none;
+    color: black;
+}
+
+.CopyR {
+    text-align: right;
+    font-family: 'Questrial', sans-serif;
+    font-size: 15px;
+}
+
+
+/* Segunda barra de navegacion */
+
+.FondoNavBar2 {
+    background-color: #93BFCF;
+    height: 50px;
+    width: 100%;
+    position: sticky !important;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 125px !important;
+}
+
+.ItemNavBar2 {
+    margin: 50px;
+    color: black;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.ItemNavBar2:hover {
+    color: #B31312;
+}
+
+
+/* Blogs */
+
+.TitBlog {
+    font-family: 'Titan One', sans-serif;
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: #387ADF;
+    text-align: center;
+    text-shadow: 3px 6px 3px rgba(0,0,0,1);
+}
+
+.ButtonVer {
+    text-decoration: none;
+    color: white;
+}
+
+.ButtonBlog {
+    border-radius: 10px;
+    height: 40px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 25px;
+    background-color: #354259;
+}
+
+.texto1 {
+    font-family: 'Combo', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    margin: 10px;
+}
+
+.texto2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.texto3 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+}
+
+.texto4 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.Contenedor-Blogs {
+    max-width: 900px;
+    min-width: 350px; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Foto {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Responsive */
+
+/* Estilos para pantallas con un ancho de 600px o menos */
+@media (max-width: 600px) {
+    .Table1, .tr1, th, td {
+        display: block;
+    }
+
+    .tr1 {
+        margin-bottom: 10px;
+    }
+
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        left: 6px;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before { content: "Perros"; }
+    td:nth-of-type(2):before { content: "Gatos"; }
+    td:nth-of-type(3):before { content: "Conejos"; }
+    td:nth-of-type(4):before { content: "Cobayos"; }
+    td:nth-of-type(5):before { content: "Hamsters"; }
+    td:nth-of-type(6):before { content: "Peces"; }
+    td:nth-of-type(7):before { content: "Pájaros"; }
+
+    .BotonIni {
+        margin-left: 10px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        height: 50px;
+        background-color: #AED2FF;
+        font-family: 'Francois One', sans-serif;
+        font-size: 16px;
+    }
+}
+
+
+/* Historia */
+
+.TitHist {
+    font-family: 'Titan One', sans-serif;
+    font-size: 80px;
+    margin-bottom: 40px;
+    color: #387ADF;
+    text-align: center;
+    text-shadow: 3px 6px 3px rgba(0,0,0,1);
+}
+
+.TitFundadora {
+    font-family: 'Combo', sans-serif;
+    color: #B31312;
+    text-align: center;
+    font-size: 70px;
+}
+
+.texto5 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TableHist {
+    display: flex;
+    justify-content: center;
+}
+
+.TableHist2 {
+    display: flex;
+    justify-content: center;
+}
+
+.FlexHist {
+    width: 700px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.FlexHist1 {
+    width: 700px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.FlexHist2 {
+    margin-right: 250px;
+    margin-left: 250px;
+    text-align: center;
+}
+
+.FlexHistImg {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+/* Adopciones */
+
+.boton-descarga {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #0802A3;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Combo', sans-serif;
+    font-size: 30px;
+  }
+
+.boton-descarga:hover {
+    color: #3ABEF9; 
+  }
+
+.FlexAdop {
+    width: 500px;
+    text-align: center;
+}
+
+.ImgBestt {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+
+/* Fomulario */
+
+.TitFormPel {
+    font-family: 'Titan One', sans-serif;
+    font-size: 80px;
+    margin-top: 5px !important;
+    margin-bottom: 40px;
+    color: #54E346;
+    text-align: center;
+    text-shadow: 4px 7px 4px rgba(0,0,0,1);
+}
+
+.Pregunta {
+    font-family: 'Combo', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Respuesta {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.Respuesta-Mult {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Formulario-Peluditos {
+    margin-top: 20px;
+    width: 500px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EEF5FF;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.Form1 {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.Body-Form {
+    background-color: #A7E6FF;
+}
+
+.TitForm {
+    font-family: 'Titan One', sans-serif;
+    font-size: 120px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #3572EF;
+    text-align: center;
+    text-shadow: 3px 6px 3px rgb(3, 23, 149);
+}
+
+.texto6 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.DivForm {
+    margin: 40px;
+}
+
+.FlexForm {
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonAn {
+    text-decoration: none;
+    color: white;
+}
+
+.ButtonForm {
+    border-radius: 10px;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    background-color: #354259;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn.btn-primary {
+    color: black; 
+}
